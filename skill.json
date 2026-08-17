@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agentic-dev-environment-live-telemetry-loop-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic development workspace & live execution telemetry feedback loop orchestrator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "agentic-dev",
+    "telemetry-loop",
+    "live-feedback",
+    "ide-orchestrator",
+    "ph-august-top"
+  ],
+  "inputs": {
+    "workspace_state": {
+      "type": "object"
+    },
+    "agent_actions": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "execution_health_score": {
+      "type": "number"
+    },
+    "live_anomalies_detected": {
+      "type": "array"
+    },
+    "loop_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
